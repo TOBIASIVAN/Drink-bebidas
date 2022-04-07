@@ -24,6 +24,15 @@ color: rgb(133, 149, 161);
 
 }
 
+/*logo de la pagina
+.logo_pagina{
+height: 200px ;
+width: 190px ;
+overflow: hidden;
+margin:20px 20px ;
+}
+
+
 /* menu principal*/
 .navegacion{  
  text-align:start;
@@ -62,7 +71,7 @@ display: inline;
 
 
 .enviosGratis li{
-  background-color: aqua;
+  background-color:yellow;
 text-align:center;
 
 }
@@ -78,22 +87,24 @@ text-align:center;
 width: 250px;
 height: 270px;
 border-radius:  8px ;  
-box-shadow:0 2px 2px rgba(255, 255, 255, 0.966) ;
+box-shadow:0 2px 2px silver ;
 overflow: hidden;
 margin: 20px;
 text-align: center;
 transition: all 0.25s;
+
 }
  
   .grid-container{
 display: grid;
 grid-template-columns: auto auto auto;
+ 
+}
+
+ .card:hover{
+   transform: scale(1.1);
  }
 
- .grid-container .card:hover{
-transition: all;
-
- }
 
  
 
@@ -101,55 +112,77 @@ transition: all;
 /*footer(redes sosciales, etc)*/
 
 
-.footer li {
-display:inline-block;
-position:relative;
-font-size: 20px;
-margin: 20px 20px;
-padding: 10px 10px;
-background-color:rgb(133, 149, 161) ;
+.boxx{
+display: inline-block;
+margin:0px 10px ;
 }
 
-.footer li a{
-text-decoration: none;
-color: #262626;
-}         
- 
+.boxx i{
+font-size:70px;
+color:silver;
+}
+
+.boxx:hover{
+transform: scale(1.1) ;
+
+}
+
+/*ANUNCIOS*/
+.anuncio3x2{
+width:1070px ;
+overflow:hidden;
+}
 .anuncioDeNoscuidamos .anuncio_cuidamos{
-  width: 1080px;
+  width: 1070px;
   height: 270px;
   overflow: hidden;
   margin-top: 200px;
 }
 
-/*productos proximamente*/
-.proximamente li{
- margin-left: 150px;
+
+/*CONTAINERS DE PRODUCTOS*/
+.containers_principales{
+font-family:Arial;
+padding-top: 0px;
+text-align: center;
+display: grid;
+grid-template-columns: auto auto auto;
+}
+ 
+.btn{
+border-radius: 3px;
+display: inline-block;
+text-decoration: none;
+padding: 30px 100px;
 
 }
+.boton-bebidas{
+background-color: silver;
+color: black;
+margin: 20px;
+}
+.btn:hover{
+ transform: scale(1.2);
 
-@media (min-width:768px){
+} 
 
-.grid-container{
-flex-direction:column;
+
+@media screen and (max-width:768px) {
+.containers_principales{
+grid-template-columns: auto;
 
 }
-
-.fondoDeColor{
-background-color: aliceblue;
-
-
-}
-}
-
-@media(min-width:768px){
-.banner_corona li{
-width: 100% ;
-}
-
-
+ .body{
+display: flex;
+  align-items: center;
+align-content: center;
+ }
+  
+ .grid-container{
+grid-template-columns:auto;
+align-items: center;
+margin-left:50px ; 
 }
 
 
-
-
+}
